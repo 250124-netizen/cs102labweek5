@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    int run = 0;
+    int a = 0;
+    int i = 0;
+
+    while (i < n) {
+        int b;
+        cin >> b;
+        
+        if (b == 0) {
+            a = 0;
+            i++;
+            continue;
+        }
+
+        a++;
+        if (a > run) {
+            run = a;
+        }
+        i++;
+    }
+
+    cout << run << endl;
+    return 0;
+}
