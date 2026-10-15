@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    int a_count = (n % 2 != 0) ? n : n - 1;
+    int b_count = (n % 2 != 0) ? 0 : 1;
+
+    int i = 0;
+    while (i < a_count) {
+        cout << 'a';
+        i++;
+    }
+
+    i = 0;
+    while (i < b_count) {
+        cout << 'b';
+        i++;
+    }
+
+    cout << endl;
+    return 0;
+}
